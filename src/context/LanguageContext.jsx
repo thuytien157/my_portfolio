@@ -4,12 +4,12 @@ const translations = {
     en: {
         home: "// home",
         about: "// about me",
-        work: "// work",
+        work: "// projects",
         experience: "// experience",
         contact: "// contact",
-        heroTitle: "Hello! ",
+        heroTitle: "Hi there! ",
         heroHighlight: "I'm Thuy Tien",
-        subtitle: "A Web Developer",
+        subtitle: "Web Developer",
         featured: "Tech Stack & Tools",
         aboutTitle: "ABOUT",
         aboutSlides: [
@@ -24,6 +24,59 @@ const translations = {
             {
                 title: "VISION",
                 desc: "I’m on a mission to bridge the gap between complex logic and beautiful design. My next big step? Diving into AI to build smarter applications and keep pushing the boundaries of what's possible.",
+            }
+        ],
+        projectsTitle: "// PROJECTS",
+        projects: [
+            {
+                title: "PA CONSULTING MICROSITE",
+                subtitle: "Making the difference.",
+                image: "https://www.adamhartwig.co.uk/images/made/7d1e93a871917fe2/citak-img1_219_158auto_c1.jpg",
+                tags: "React / Tailwind"
+            },
+            {
+                title: "CITAK RUGS INC",
+                subtitle: "The brand new Citak website.",
+                image: "https://www.adamhartwig.co.uk/images/made/7d1e93a871917fe2/cep-img1_219_158auto_c1.jpg",
+                tags: "Laravel / Vue"
+            },
+            {
+                title: "PA CONSULTING MICROSITE",
+                subtitle: "Making the difference.",
+                image: "https://www.adamhartwig.co.uk/images/made/7d1e93a871917fe2/citak-img1_219_158auto_c1.jpg",
+                tags: "React / Tailwind"
+            },
+        ],
+        experienceTitle: "EXPERIENCE",
+        experienceBg: "HISTORY",
+        experienceItems: [
+            {
+                year: "FEB 2026 – MAR 2026",
+                role: "MM Mega Market Promotion System Developer",
+                company: "ASIA DIGITALIZATION",
+                description: "MM Mega Market Promotion System: Designed RESTful APIs and optimized Elasticsearch data mapping. Managed complex product label logic and Excel validation systems.",
+                tech: ["Laravel", "Vue.js", "AWS", "Elasticsearch"]
+            },
+            {
+                year: "NOV 2025 – MAR 2026",
+                role: "Booking & Corporate Web (Amory, KLIC)",
+                company: "ASIA DIGITALIZATION",
+                description: "Booking & Corporate Web: Customized booking logic, developed currency converters, and automated data sync from forms to Google Sheets/Excel.",
+                tech: ["WordPress", "PHP", "JavaScript", "CSS"]
+            },
+            {
+                year: "SEP 2025 – DEC 2025",
+                role: "Menas POS & Sales Management Developer",
+                company: "ASIA DIGITALIZATION",
+                description: "POS & Sales Management (Menas): Built PIN-based auth, VietQR integration, and a Voucher module with automated email campaigns and statistics dashboard.",
+                tech: ["Laravel", "jQuery", "MySQL", "VietQR"]
+            },
+            {
+                year: "JUL 2025 – SEP 2025",
+                role: "CollabXP (SaaS)",
+                company: "ASIA DIGITALIZATION",
+                description: "CollabXP (SaaS): Implemented core multi-language support and built dynamic data rendering mechanisms for the platform.",
+                tech: ["CodeIgniter 3", "JavaScript", "MySQL"]
             }
         ]
     },
@@ -51,10 +104,62 @@ const translations = {
                 title: "MỤC TIÊU",
                 desc: "Mình muốn kể những câu chuyện thú vị thông qua dòng code, nơi logic khô khan gặp gỡ những thiết kế tinh tế. Sắp tới, mình dự định chinh phục thêm nhiều công nghệ khác để làm cho các sản phẩm của mình trở nên thông minh và cá tính hơn.",
             }
+        ],
+        projectsTitle: "// DỰ ÁN",
+        projects: [
+            {
+                title: "PA CONSULTING MICROSITE",
+                subtitle: "Making the difference.",
+                image: "https://www.adamhartwig.co.uk/images/made/7d1e93a871917fe2/citak-img1_219_158auto_c1.jpg",
+                tags: "React / Tailwind"
+            },
+            {
+                title: "CITAK RUGS INC",
+                subtitle: "The brand new Citak website.",
+                image: "https://www.adamhartwig.co.uk/images/made/7d1e93a871917fe2/cep-img1_219_158auto_c1.jpg",
+                tags: "Laravel / Vue"
+            },
+            {
+                title: "PA CONSULTING MICROSITE",
+                subtitle: "Making the difference.",
+                image: "https://www.adamhartwig.co.uk/images/made/7d1e93a871917fe2/citak-img1_219_158auto_c1.jpg",
+                tags: "React / Tailwind"
+            },
+        ],
+        experienceTitle: "KINH NGHIỆM",
+        experienceBg: "LỊCH SỬ",
+        experienceItems: [
+            {
+                year: "THG 02/2026 – THG 03/2026",
+                role: "Hệ thống Khuyến mãi MM Mega Market",
+                company: "ASIA DIGITALIZATION",
+                description: "Hệ thống khuyến mãi MM Mega Market: Thiết kế RESTful API và tối ưu hóa ánh xạ dữ liệu Elasticsearch. Quản lý logic nhãn sản phẩm phức tạp và hệ thống xác thực Excel.",
+                tech: ["Laravel", "Vue.js", "AWS", "Elasticsearch"]
+            },
+            {
+                year: "THG 11/2025 – THG 03/2026",
+                role: "Web Đặt chỗ (Amory) & Giới thiệu Doanh nghiệp (KLIC)",
+                company: "ASIA DIGITALIZATION",
+                description: "Web Đặt chỗ & Doanh nghiệp: Tùy chỉnh logic booking, phát triển bộ chuyển đổi tiền tệ và tự động đồng bộ dữ liệu từ form sang Google Sheets/Excel.",
+                tech: ["WordPress", "PHP", "JavaScript", "CSS"]
+            },
+            {
+                year: "THG 09/2025 – THG 12/2025",
+                role: "Hệ thống POS & Quản lý bán hàng (Menas)",
+                company: "ASIA DIGITALIZATION",
+                description: "Hệ thống POS & Quản lý bán hàng (Menas): Xây dựng xác thực mã PIN, tích hợp thanh toán VietQR và module Voucher với chiến dịch email tự động.",
+                tech: ["Laravel", "jQuery", "MySQL", "VietQR"]
+            },
+            {
+                year: "THG 07/2025 – THG 09/2025",
+                role: "CollabXP (SaaS)",
+                company: "ASIA DIGITALIZATION",
+                description: "CollabXP (SaaS): Triển khai hỗ trợ đa ngôn ngữ cốt lõi và xây dựng cơ chế hiển thị dữ liệu động cho nền tảng.",
+                tech: ["CodeIgniter 3", "JavaScript", "MySQL"]
+            }
         ]
     }
 };
-
 const LanguageContext = createContext();
 
 export const LanguageProvider = ({ children }) => {
