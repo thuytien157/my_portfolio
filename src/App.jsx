@@ -6,11 +6,15 @@ import HeroSection from "./components/Hero";
 import AboutSection from './components/AboutSection';
 import ProjectSection from './components/ProjectSection';
 import ExperienceSection from './components/ExperienceSection';
+import CustomCursor from "./components/CustomCursor"; // Import ở đây
 
 function App() {
   return (
     <ThemeProvider>
       <LanguageProvider>
+        {/* Thêm component con trỏ vào đây */}
+        <CustomCursor /> 
+        
         <div className="min-h-screen transition-colors duration-500">
           <Navbar />
           <section id="home"><HeroSection /></section>

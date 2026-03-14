@@ -70,7 +70,7 @@ const ContactPill = ({ item, isDark }) => {
 
 export default function HeroSection() {
   const { isDark, setIsDark } = useTheme();
-  const { t, lang } = useLang(); // Lấy thêm lang để check ngôn ngữ hiện tại
+  const { t, lang } = useLang(); 
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] });
 
@@ -84,12 +84,18 @@ export default function HeroSection() {
   ];
 
   const techs = [
-    { name: "PHP", id: "php" }, { name: "Laravel", id: "laravel" },
-    { name: "CodeIgniter", id: "codeigniter" }, { name: "WordPress", id: "wp" },
-    { name: "JavaScript", id: "javascript" }, { name: "Node.js", id: "nodejs" },
-    { name: "Vue.js", id: "vue" }, { name: "React", id: "react" },
-    { name: "MySQL", id: "mysql" }, { name: "PostgreSQL", id: "postgresql" },
-    { name: "Tailwind", id: "tailwind" }, { name: "Bootstrap", id: "bootstrap" },
+    { name: "PHP", id: "postgres" }, 
+    { name: "Laravel", id: "laravel" },
+    { name: "CodeIgniter", id: "php" }, 
+    { name: "WordPress", id: "wordpress" },
+    { name: "JavaScript", id: "js" }, 
+    { name: "Node.js", id: "nodejs" },
+    { name: "Vue.js", id: "vue" }, 
+    { name: "React", id: "react" },
+    { name: "MySQL", id: "mysql" }, 
+    { name: "PostgreSQL", id: "postgres" },
+    { name: "Tailwind", id: "tailwind" }, 
+    { name: "Bootstrap", id: "bootstrap" },
   ];
 
   const contactInfo = [
