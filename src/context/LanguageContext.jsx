@@ -28,25 +28,47 @@ const translations = {
         ],
         projectsTitle: "// PROJECTS",
         projects: [
-            {
-                title: "PA CONSULTING MICROSITE",
-                subtitle: "Making the difference.",
-                image: "https://www.adamhartwig.co.uk/images/made/7d1e93a871917fe2/citak-img1_219_158auto_c1.jpg",
-                tags: "React / Tailwind"
-            },
-            {
-                title: "CITAK RUGS INC",
-                subtitle: "The brand new Citak website.",
-                image: "https://www.adamhartwig.co.uk/images/made/7d1e93a871917fe2/cep-img1_219_158auto_c1.jpg",
-                tags: "Laravel / Vue"
-            },
-            {
-                title: "PA CONSULTING MICROSITE",
-                subtitle: "Making the difference.",
-                image: "https://www.adamhartwig.co.uk/images/made/7d1e93a871917fe2/citak-img1_219_158auto_c1.jpg",
-                tags: "React / Tailwind"
-            },
+    {
+        id: "p1",
+        title: "PUDDING RUSH",
+        subtitle: "Interactive 3D Web Game",
+        image: "https://images.unsplash.com/photo-1614332287897-cdc485fa562d?q=80&w=1000",
+        gallery: [
+            "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1000",
+            "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1000",
+            "https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1000"
         ],
+        description: "A personal project exploring Three.js and Physics engines. Focuses on high-performance rendering and playful user interactions.",
+        tags: ["Three.js", "React Three Fiber", "GSAP"],
+        link: "https://pudding-rush.demo"
+    },
+    {
+        id: "p2",
+        title: "NEO-VIBE PORTFOLIO",
+        subtitle: "Awwwards Inspired Design",
+        image: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1000",
+        gallery: [
+            "https://images.unsplash.com/photo-1522542550221-31fd19255a7a?q=80&w=1000",
+            "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?q=80&w=1000"
+        ],
+        description: "Experimental portfolio concept using advanced Framer Motion transitions and custom shader backgrounds.",
+        tags: ["React", "GLSL", "Framer Motion"],
+        link: "https://neo-vibe.design"
+    },
+    {
+        id: "p3",
+        title: "ZEN TASKER",
+        subtitle: "Minimalist Productivity Tool",
+        image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=1000",
+        gallery: [
+            "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=1000",
+            "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?q=80&w=1000"
+        ],
+        description: "A productivity app focusing on cognitive ease and deep work, featuring a custom-built pomodoro timer and habit tracker.",
+        tags: ["Next.js", "Tailwind", "Supabase"],
+        link: "https://zentasker.app"
+    }
+],
         experienceTitle: "EXPERIENCE",
         experienceBg: "HISTORY",
         experienceItems: [
@@ -107,25 +129,47 @@ const translations = {
         ],
         projectsTitle: "// DỰ ÁN",
         projects: [
-            {
-                title: "PA CONSULTING MICROSITE",
-                subtitle: "Making the difference.",
-                image: "https://www.adamhartwig.co.uk/images/made/7d1e93a871917fe2/citak-img1_219_158auto_c1.jpg",
-                tags: "React / Tailwind"
-            },
-            {
-                title: "CITAK RUGS INC",
-                subtitle: "The brand new Citak website.",
-                image: "https://www.adamhartwig.co.uk/images/made/7d1e93a871917fe2/cep-img1_219_158auto_c1.jpg",
-                tags: "Laravel / Vue"
-            },
-            {
-                title: "PA CONSULTING MICROSITE",
-                subtitle: "Making the difference.",
-                image: "https://www.adamhartwig.co.uk/images/made/7d1e93a871917fe2/citak-img1_219_158auto_c1.jpg",
-                tags: "React / Tailwind"
-            },
+    {
+        id: "p1",
+        title: "PUDDING RUSH",
+        subtitle: "Game Web 3D Tương Tác",
+        image: "https://images.unsplash.com/photo-1614332287897-cdc485fa562d?q=80&w=1000",
+        gallery: [
+            "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1000",
+            "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1000",
+            "https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1000"
         ],
+        description: "Dự án cá nhân khám phá Three.js và Physics engines. Tập trung vào việc render hiệu suất cao và tương tác người dùng vui nhộn.",
+        tags: ["Three.js", "React Three Fiber", "GSAP"],
+        link: "https://pudding-rush.demo"
+    },
+    {
+        id: "p2",
+        title: "NEO-VIBE PORTFOLIO",
+        subtitle: "Cảm hứng thiết kế Awwwards",
+        image: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1000",
+        gallery: [
+            "https://images.unsplash.com/photo-1522542550221-31fd19255a7a?q=80&w=1000",
+            "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?q=80&w=1000"
+        ],
+        description: "Concept Portfolio thử nghiệm sử dụng các hiệu ứng chuyển cảnh Framer Motion nâng cao và shader background tùy chỉnh.",
+        tags: ["React", "GLSL", "Framer Motion"],
+        link: "https://neo-vibe.design"
+    },
+    {
+        id: "p3",
+        title: "ZEN TASKER",
+        subtitle: "Công cụ làm việc tối giản",
+        image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=1000",
+        gallery: [
+            "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=1000",
+            "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?q=80&w=1000"
+        ],
+        description: "Ứng dụng tăng năng suất tập trung vào sự tối giản và khả năng tập trung sâu, tích hợp bộ đếm Pomodoro và theo dõi thói quen.",
+        tags: ["Next.js", "Tailwind", "Supabase"],
+        link: "https://zentasker.app"
+    }
+],
         experienceTitle: "KINH NGHIỆM",
         experienceBg: "LỊCH SỬ",
         experienceItems: [

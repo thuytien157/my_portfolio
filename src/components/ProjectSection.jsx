@@ -1,77 +1,82 @@
-import { motion } from "framer-motion";
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { useTheme } from "../context/ThemeContext";
 import { useLang } from "../context/LanguageContext";
+import ProjectModal from "./ProjectModal";
 
-const ProjectCard = ({ project, index, isDark }) => {
+const ProjectCard = ({ project, index, isDark, onClick }) => {
     return (
         <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="group relative"
+            className="group cursor-pointer"
+            onClick={onClick}
         >
-            <a href="#" className="block relative p-4 transition-transform duration-300 group-hover:-translate-y-1">
-                <div className={`absolute inset-0 transition-colors duration-500 
-                    ${isDark ? "bg-[#1a1c23]" : "bg-white shadow-[0_4px_10px_rgba(0,0,0,0.05)]"}`}
-                >
-                    <div className="absolute top-0 left-0 w-2 h-2 bg-[#e0e0e0]/50" />
-                    <div className="absolute top-0 right-0 w-2 h-2 bg-[#e0e0e0]/50" />
-                    <div className="absolute bottom-0 left-0 w-2 h-2 bg-[#e0e0e0]/50" />
-                    <div className="absolute bottom-0 right-0 w-2 h-2 bg-[#e0e0e0]/50" />
+            <div className={`relative p-3 transition-all duration-500 border ${isDark ? "bg-[#111] border-white/5" : "bg-white border-black/5 shadow-sm"}`}>
+                <div className="relative overflow-hidden aspect-[1.5/1] bg-neutral-800">
+                    <img
+                        src={project.image}
+                        alt={project.title}
+                        className="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
+                    />
+                    <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors" />
                 </div>
 
-                <div className="relative z-10 flex flex-col">
-                    <div className="relative overflow-hidden bg-[#f0f0f0] aspect-[1.4/1]">
-                        <motion.img
-                            src={project.image}
-                            alt={project.title}
-                            className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700"
-                        />
-                        
-                        <div className={`absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300
-                            ${isDark ? "bg-[#4fd1c5]/20 backdrop-blur-[2px]" : "bg-black/40 backdrop-blur-[2px]"}`}>
-                            
-                            <span className="px-5 py-2 border-2 border-white text-white text-[11px] font-black uppercase tracking-[0.3em]">
-                                View Detail
-                            </span>
-                        </div>
-                    </div>
-
-                    <div className="pt-6 pb-2">
-                        <h3 className={`text-[15px] font-black tracking-tight leading-tight uppercase mb-1 group-hover:text-[#4fd1c5] transition-colors duration-300
-                            ${isDark ? "text-white" : "text-[#555]"}`}>
+                <div className="mt-5 flex justify-between items-start">
+                    <div>
+                        <h3 className={`text-sm font-black uppercase tracking-wider ${isDark ? "text-white" : "text-black"}`}>
                             {project.title}
                         </h3>
-                        <p className={`text-[12px] font-medium opacity-60 italic group-hover:opacity-100 transition-opacity duration-300
-                            ${isDark ? "text-slate-400" : "text-[#888]"}`}>
+                        <p className="text-[10px] uppercase tracking-widest text-[#4fd1c5] font-bold mt-1 opacity-0 group-hover:opacity-100 transition-opacity">
                             {project.subtitle}
                         </p>
                     </div>
+                    <span className="text-[10px] font-black opacity-20 italic">0{index + 1}</span>
                 </div>
-
-                <div className="absolute bottom-4 right-4 opacity-40 font-black text-xl italic text-[#4fd1c5] group-hover:opacity-80 transition-opacity duration-300">
-                    {index}
-                </div>
-            </a>
+            </div>
         </motion.div>
     );
 };
+
 export default function ProjectSection() {
     const { isDark } = useTheme();
     const { t } = useLang();
+    const [selectedProject, setSelectedProject] = useState(null);
     const projects = t("projects") || [];
 
     return (
-        <section className={`py-12 px-6 md:px-20 transition-colors duration-1000 
-      ${isDark ? "bg-[#0a0c10]" : "bg-[#ebebeb]"}`}>
-            <h2 className={`text-start text-5xl md:text-7xl font-black tracking-tighter leading-none mb-12 uppercase ${isDark ? "text-[#4fd1c5]" : "text-black"}`}>{t("projectsTitle")}</h2>
-            <div className="container mx-auto max-w-7xl">
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <section className={`py-20 px-6 md:px-20 transition-colors duration-1000 ${isDark ? "bg-[#0a0c10]" : "bg-[#f5f5f5]"}`}>
+            <div className="max-w-7xl mx-auto">
+                <div className="flex items-end justify-between mb-16">
+                    <h2 className={`text-6xl md:text-8xl font-black tracking-tighter leading-none uppercase ${isDark ? "text-white" : "text-black"}`}>
+                        {t("projectsTitle")}
+                    </h2>
+                    <div className="hidden md:block w-1/3 h-[1px] bg-[#4fd1c5]/30 mb-4" />
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
                     {projects.map((project, index) => (
-                        <ProjectCard key={index} index={index} project={project} isDark={isDark} />
+                        <ProjectCard 
+                            key={index} 
+                            index={index} 
+                            project={project} 
+                            isDark={isDark} 
+                            onClick={() => setSelectedProject(project)}
+                        />
                     ))}
                 </div>
             </div>
+
+            <AnimatePresence>
+                {selectedProject && (
+                    <ProjectModal 
+                        project={selectedProject} 
+                        isDark={isDark} 
+                        onClose={() => setSelectedProject(null)} 
+                    />
+                )}
+            </AnimatePresence>
         </section>
     );
 }
