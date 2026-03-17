@@ -1,7 +1,7 @@
 import './App.css'
 import { ThemeProvider } from "./context/ThemeContext";
 import { LanguageProvider } from "./context/LanguageContext";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/NavBar";
 import HeroSection from "./components/Hero";
 import AboutSection from './components/AboutSection';
 import ProjectSection from './components/ProjectSection';
