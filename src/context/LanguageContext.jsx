@@ -28,47 +28,79 @@ const translations = {
         ],
         projectsTitle: "// PROJECTS",
         projects: [
-    {
-        id: "p1",
-        title: "PUDDING RUSH",
-        subtitle: "Interactive 3D Web Game",
-        image: "https://images.unsplash.com/photo-1614332287897-cdc485fa562d?q=80&w=1000",
-        gallery: [
-            "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1000",
-            "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1000",
-            "https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1000"
+            {
+                id: "p1",
+                title: "ShopGrid",
+                subtitle: "E-commerce Website",
+                image: "https://res.cloudinary.com/daqhc6id1/image/upload/v1773750911/full_home.jpg",
+                gallery: [
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773750911/full_home.jpg",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773750910/products.jpg",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773750910/detail_product.png",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773751662/screencapture-shopgrid-vue-netlify-app-product-detail-quan-dai-unisex-ong-rong-lung-thun-varsity-sportive-black-s-1-2026-03-17-19_47_19.jpg",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773750910/address.png",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773750910/add_address.png",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773750909/cart.png",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773750909/checkout.png",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773750878/mail_confirm.jpg",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773750875/review_personal.png",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773750877/order_detail.jpg",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773750876/edit_order_detail_address.png",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773750876/reason.png",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773750875/form_review.png",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773750876/dashboard.jpg",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773750878/admin_products.jpg",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773750878/add_products.jpg",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773750879/edit_products.jpg",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773750877/attribute.png",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773750877/add_attribute.png",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773750877/edit_attribute.png",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773751435/category.png",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773750879/add_category.png",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773750876/admin_users.png",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773750875/admin_reviews.png",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773750874/admin_review.png",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773750874/review_detail.png",
+                ],
+                description: "A comprehensive e-commerce platform featuring automated email queues, and advanced product variant management. Designed with a focus on seamless user experience and robust administrative control.",
+                tags: ["Laravel", "Vue.js", "MySQL", "Pusher"],
+                link: "https://shopgrid.tieenz.site"
+            },
+            {
+                id: "p2",
+                title: "Donezo",
+                subtitle: "Task & Project Management",
+                image: "https://res.cloudinary.com/daqhc6id1/image/upload/v1773752636/screencapture-donezo-vue-netlify-app-login-2026-03-17-19_56_21.jpg",
+                gallery: [
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773752634/screencapture-donezo-vue-netlify-app-forgot-password-2026-03-17-20_01_26.jpg",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773752634/screencapture-donezo-vue-netlify-app-home-2026-03-17-20_00_03.jpg",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773752634/screencapture-donezo-vue-netlify-app-projects-1-2026-03-17-20_00_39.jpg",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773752636/screencapture-donezo-vue-netlify-app-projects-1-tasks-2026-03-17-19_58_11.jpg",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773752635/screencapture-donezo-vue-netlify-app-projects-1-tasks-1-2026-03-17-19_59_01.jpg",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773752636/screencapture-donezo-vue-netlify-app-projects-1-tasks-2026-03-17-19_58_25.jpg",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773752636/screencapture-donezo-vue-netlify-app-projects-new-2026-03-17-19_57_54.jpg",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773752635/screencapture-donezo-vue-netlify-app-projects-1-overview-2026-03-17-20_00_52.jpg",
+
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773752635/screencapture-donezo-vue-netlify-app-home-2026-03-17-20_00_18.jpg",
+                ],
+                description: "A collaborative task management tool with real-time updates via Pusher. It supports team invitations, detailed task history tracking, and a seamless light/dark mode experience for enhanced productivity.",
+                tags: ["Laravel", "Vue.js", "Pusher", "Real-time", "MySQL"],
+                link: "https://donezo-vue.netlify.app"
+            },
+            // {
+            //     id: "p3",
+            //     title: "ZEN TASKER",
+            //     subtitle: "Minimalist Productivity Tool",
+            //     image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=1000",
+            //     gallery: [
+            //         "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=1000",
+            //         "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?q=80&w=1000"
+            //     ],
+            //     description: "A productivity app focusing on cognitive ease and deep work, featuring a custom-built pomodoro timer and habit tracker.",
+            //     tags: ["Next.js", "Tailwind", "Supabase"],
+            //     link: "https://zentasker.app"
+            // }
         ],
-        description: "A personal project exploring Three.js and Physics engines. Focuses on high-performance rendering and playful user interactions.",
-        tags: ["Three.js", "React Three Fiber", "GSAP"],
-        link: "https://pudding-rush.demo"
-    },
-    {
-        id: "p2",
-        title: "NEO-VIBE PORTFOLIO",
-        subtitle: "Awwwards Inspired Design",
-        image: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1000",
-        gallery: [
-            "https://images.unsplash.com/photo-1522542550221-31fd19255a7a?q=80&w=1000",
-            "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?q=80&w=1000"
-        ],
-        description: "Experimental portfolio concept using advanced Framer Motion transitions and custom shader backgrounds.",
-        tags: ["React", "GLSL", "Framer Motion"],
-        link: "https://neo-vibe.design"
-    },
-    {
-        id: "p3",
-        title: "ZEN TASKER",
-        subtitle: "Minimalist Productivity Tool",
-        image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=1000",
-        gallery: [
-            "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=1000",
-            "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?q=80&w=1000"
-        ],
-        description: "A productivity app focusing on cognitive ease and deep work, featuring a custom-built pomodoro timer and habit tracker.",
-        tags: ["Next.js", "Tailwind", "Supabase"],
-        link: "https://zentasker.app"
-    }
-],
         experienceTitle: "EXPERIENCE",
         experienceBg: "HISTORY",
         experienceItems: [
@@ -129,47 +161,79 @@ const translations = {
         ],
         projectsTitle: "// DỰ ÁN",
         projects: [
-    {
-        id: "p1",
-        title: "PUDDING RUSH",
-        subtitle: "Game Web 3D Tương Tác",
-        image: "https://images.unsplash.com/photo-1614332287897-cdc485fa562d?q=80&w=1000",
-        gallery: [
-            "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1000",
-            "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1000",
-            "https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1000"
+            {
+                id: "p1",
+                title: "ShopGrid",
+                subtitle: "Website Thương mại điện tử",
+                image: "https://res.cloudinary.com/daqhc6id1/image/upload/v1773750911/full_home.jpg",
+                gallery: [
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773750911/full_home.jpg",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773750910/products.jpg",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773750910/detail_product.png",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773751662/screencapture-shopgrid-vue-netlify-app-product-detail-quan-dai-unisex-ong-rong-lung-thun-varsity-sportive-black-s-1-2026-03-17-19_47_19.jpg",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773750910/address.png",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773750910/add_address.png",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773750909/cart.png",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773750909/checkout.png",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773750878/mail_confirm.jpg",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773750875/review_personal.png",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773750877/order_detail.jpg",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773750876/edit_order_detail_address.png",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773750876/reason.png",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773750875/form_review.png",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773750876/dashboard.jpg",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773750878/admin_products.jpg",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773750878/add_products.jpg",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773750879/edit_products.jpg",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773750877/attribute.png",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773750877/add_attribute.png",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773750877/edit_attribute.png",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773751435/category.png",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773750879/add_category.png",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773750876/admin_users.png",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773750875/admin_reviews.png",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773750874/admin_review.png",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773750874/review_detail.png",
+                ],
+                description: "Nền tảng thương mại điện tử toàn diện với hệ thống hàng đợi email tự động, quản lý biến thể sản phẩm (size/color). Dự án tập trung tối ưu trải nghiệm mua sắm và hệ thống quản trị nội bộ mạnh mẽ.",
+                tags: ["Laravel", "Vue.js", "MySQL", "Pusher"],
+                link: "https://shopgrid.tieenz.site"
+            },
+            {
+                id: "p2",
+                title: "Donezo",
+                subtitle: "Quản lý công việc & Dự án",
+                image: "https://res.cloudinary.com/daqhc6id1/image/upload/v1773752636/screencapture-donezo-vue-netlify-app-login-2026-03-17-19_56_21.jpg",
+                gallery: [
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773752634/screencapture-donezo-vue-netlify-app-forgot-password-2026-03-17-20_01_26.jpg",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773752634/screencapture-donezo-vue-netlify-app-home-2026-03-17-20_00_03.jpg",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773752634/screencapture-donezo-vue-netlify-app-projects-1-2026-03-17-20_00_39.jpg",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773752636/screencapture-donezo-vue-netlify-app-projects-1-tasks-2026-03-17-19_58_11.jpg",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773752635/screencapture-donezo-vue-netlify-app-projects-1-tasks-1-2026-03-17-19_59_01.jpg",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773752636/screencapture-donezo-vue-netlify-app-projects-1-tasks-2026-03-17-19_58_25.jpg",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773752636/screencapture-donezo-vue-netlify-app-projects-new-2026-03-17-19_57_54.jpg",
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773752635/screencapture-donezo-vue-netlify-app-projects-1-overview-2026-03-17-20_00_52.jpg",
+
+                    "https://res.cloudinary.com/daqhc6id1/image/upload/v1773752635/screencapture-donezo-vue-netlify-app-home-2026-03-17-20_00_18.jpg",
+                ],
+                description: "Công cụ quản lý công việc nhóm với tính năng cập nhật lịch sử thời gian thực qua Pusher. Hỗ trợ mời thành viên, quản lý deadline chặt chẽ và tích hợp chế độ sáng/tối giúp tối ưu hóa không gian làm việc.",
+                tags: ["Laravel", "Vue.js", "Pusher", "Real-time", "MySQL"],
+                link: "https://donezo-vue.netlify.app"
+            },
+            // {
+            //     id: "p3",
+            //     title: "ZEN TASKER",
+            //     subtitle: "Công cụ làm việc tối giản",
+            //     image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=1000",
+            //     gallery: [
+            //         "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=1000",
+            //         "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?q=80&w=1000"
+            //     ],
+            //     description: "Ứng dụng tăng năng suất tập trung vào sự tối giản và khả năng tập trung sâu, tích hợp bộ đếm Pomodoro và theo dõi thói quen.",
+            //     tags: ["Next.js", "Tailwind", "Supabase"],
+            //     link: "https://zentasker.app"
+            // }
         ],
-        description: "Dự án cá nhân khám phá Three.js và Physics engines. Tập trung vào việc render hiệu suất cao và tương tác người dùng vui nhộn.",
-        tags: ["Three.js", "React Three Fiber", "GSAP"],
-        link: "https://pudding-rush.demo"
-    },
-    {
-        id: "p2",
-        title: "NEO-VIBE PORTFOLIO",
-        subtitle: "Cảm hứng thiết kế Awwwards",
-        image: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1000",
-        gallery: [
-            "https://images.unsplash.com/photo-1522542550221-31fd19255a7a?q=80&w=1000",
-            "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?q=80&w=1000"
-        ],
-        description: "Concept Portfolio thử nghiệm sử dụng các hiệu ứng chuyển cảnh Framer Motion nâng cao và shader background tùy chỉnh.",
-        tags: ["React", "GLSL", "Framer Motion"],
-        link: "https://neo-vibe.design"
-    },
-    {
-        id: "p3",
-        title: "ZEN TASKER",
-        subtitle: "Công cụ làm việc tối giản",
-        image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=1000",
-        gallery: [
-            "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=1000",
-            "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?q=80&w=1000"
-        ],
-        description: "Ứng dụng tăng năng suất tập trung vào sự tối giản và khả năng tập trung sâu, tích hợp bộ đếm Pomodoro và theo dõi thói quen.",
-        tags: ["Next.js", "Tailwind", "Supabase"],
-        link: "https://zentasker.app"
-    }
-],
         experienceTitle: "KINH NGHIỆM",
         experienceBg: "LỊCH SỬ",
         experienceItems: [

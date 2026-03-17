@@ -28,7 +28,7 @@ const ProjectCard = ({ project, index, isDark, onClick }) => {
                         <h3 className={`text-sm font-black uppercase tracking-wider ${isDark ? "text-white" : "text-black"}`}>
                             {project.title}
                         </h3>
-                        <p className="text-[10px] uppercase tracking-widest text-[#4fd1c5] font-bold mt-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p className="text-[10px] uppercase tracking-widest text-[#4fd1c5] font-bold mt-1 opacity-100">
                             {project.subtitle}
                         </p>
                     </div>
