@@ -129,7 +129,7 @@ const translations = {
                 year: "JUL 2025 – SEP 2025",
                 role: "CollabXP (SaaS)",
                 company: "ASIA DIGITALIZATION",
-                description: "CollabXP (SaaS): Implemented core multi-language support and built dynamic data rendering mechanisms for the platform.",
+                description: "CollabXP (SaaS): Built multi-language support, dynamic data rendering, and SMS notifications (eSMS) with workflow-based alerts.",
                 tech: ["CodeIgniter 3", "JavaScript", "MySQL"]
             }
         ]
@@ -262,7 +262,7 @@ const translations = {
                 year: "THG 07/2025 – THG 09/2025",
                 role: "CollabXP (SaaS)",
                 company: "ASIA DIGITALIZATION",
-                description: "CollabXP (SaaS): Triển khai hỗ trợ đa ngôn ngữ cốt lõi và xây dựng cơ chế hiển thị dữ liệu động cho nền tảng.",
+                description: "CollabXP (SaaS): Xây dựng đa ngôn ngữ, render dữ liệu động và tích hợp SMS (eSMS) với cảnh báo theo workflow.",
                 tech: ["CodeIgniter 3", "JavaScript", "MySQL"]
             }
         ]
