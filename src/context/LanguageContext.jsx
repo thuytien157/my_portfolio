@@ -102,37 +102,44 @@ const translations = {
             // }
         ],
         experienceTitle: "EXPERIENCE",
-        experienceBg: "HISTORY",
-        experienceItems: [
-            {
-                year: "FEB 2026 – MAR 2026",
-                role: "MM Mega Market Promotion System Developer",
-                company: "ASIA DIGITALIZATION",
-                description: "MM Mega Market Promotion System: Designed RESTful APIs and optimized Elasticsearch data mapping. Managed complex product label logic and Excel validation systems.",
-                tech: ["Laravel", "Vue.js", "AWS", "Elasticsearch"]
-            },
-            {
-                year: "NOV 2025 – MAR 2026",
-                role: "Booking & Corporate Web (Amory, KLIC)",
-                company: "ASIA DIGITALIZATION",
-                description: "Booking & Corporate Web: Customized booking logic, developed currency converters, and automated data sync from forms to Google Sheets/Excel.",
-                tech: ["WordPress", "PHP", "JavaScript", "CSS"]
-            },
-            {
-                year: "SEP 2025 – DEC 2025",
-                role: "Menas POS & Sales Management Developer",
-                company: "ASIA DIGITALIZATION",
-                description: "POS & Sales Management (Menas): Built PIN-based auth, VietQR integration, and a Voucher module with automated email campaigns and statistics dashboard.",
-                tech: ["Laravel", "jQuery", "MySQL", "VietQR"]
-            },
-            {
-                year: "JUL 2025 – SEP 2025",
-                role: "CollabXP (SaaS)",
-                company: "ASIA DIGITALIZATION",
-                description: "CollabXP (SaaS): Built multi-language support, dynamic data rendering, and SMS notifications (eSMS) with workflow-based alerts.",
-                tech: ["CodeIgniter 3", "JavaScript", "MySQL"]
-            }
-        ]
+experienceBg: "HISTORY",
+experienceItems: [
+    {
+        year: "MAR 2026 – PRESENT",
+        role: "Full-stack Developer",
+        company: "ASIA DIGITALIZATION",
+        description: "Recruitment System (CollabXP): Implemented full multi-language support (EN/VI). Developed recruitment dashboards with real-time statistics. Designed task dependency logic and integrated automated interview scheduling with email calendars.",
+        tech: ["Laravel", "MySQL", "Ant Design", "Full-stack"]
+    },
+    {
+        year: "JAN 2026 – MAR 2026",
+        role: "Backend Developer",
+        company: "ASIA DIGITALIZATION",
+        description: "Rainscale CRM (Customer Service): Implemented Elasticsearch to optimize ticket indexing and retrieval speed. Developed event-driven SMS alerts (SLA, status) and designed Survey nodes for automated support workflows.",
+        tech: ["CodeIgniter 3", "Elasticsearch", "MySQL", "eSMS"]
+    },
+    {
+        year: "NOV 2025 – JAN 2026",
+        role: "Backend Developer",
+        company: "ASIA DIGITALIZATION",
+        description: "MM Mega Market Promotion: Designed RESTful APIs and managed product labels via Excel import/validation. Executed data mapping with Elasticsearch and optimized display priority logic for complex promotional campaigns.",
+        tech: ["Laravel", "Vue.js", "AWS", "Elasticsearch"]
+    },
+    {
+        year: "SEP 2025 – DEC 2025",
+        role: "PHP Developer",
+        company: "ASIA DIGITALIZATION",
+        description: "Menas POS System: Developed employee management with PIN-based auth (RBAC). Integrated barcode scanning for real-time order recovery. Implemented automated VietQR generation and direct invoice printing.",
+        tech: ["Laravel", "jQuery", "MySQL", "VietQR"]
+    },
+    {
+        year: "JUL 2025 – SEP 2025",
+        role: "WordPress Developer",
+        company: "ASIA DIGITALIZATION",
+        description: "Booking & Corporate Web (Amory, KLIC): Designed custom themes and implemented advanced booking logic. Developed a real-time currency converter and automated data synchronization to Google Sheets.",
+        tech: ["WordPress", "PHP", "JavaScript", "Google API"]
+    }
+]
     },
     vi: {
         home: "// trang chủ",
@@ -235,37 +242,44 @@ const translations = {
             // }
         ],
         experienceTitle: "KINH NGHIỆM",
-        experienceBg: "LỊCH SỬ",
-        experienceItems: [
-            {
-                year: "THG 02/2026 – THG 03/2026",
-                role: "Hệ thống Khuyến mãi MM Mega Market",
-                company: "ASIA DIGITALIZATION",
-                description: "Hệ thống khuyến mãi MM Mega Market: Thiết kế RESTful API và tối ưu hóa ánh xạ dữ liệu Elasticsearch. Quản lý logic nhãn sản phẩm phức tạp và hệ thống xác thực Excel.",
-                tech: ["Laravel", "Vue.js", "AWS", "Elasticsearch"]
-            },
-            {
-                year: "THG 11/2025 – THG 03/2026",
-                role: "Web Đặt chỗ (Amory) & Giới thiệu Doanh nghiệp (KLIC)",
-                company: "ASIA DIGITALIZATION",
-                description: "Web Đặt chỗ & Doanh nghiệp: Tùy chỉnh logic booking, phát triển bộ chuyển đổi tiền tệ và tự động đồng bộ dữ liệu từ form sang Google Sheets/Excel.",
-                tech: ["WordPress", "PHP", "JavaScript", "CSS"]
-            },
-            {
-                year: "THG 09/2025 – THG 12/2025",
-                role: "Hệ thống POS & Quản lý bán hàng (Menas)",
-                company: "ASIA DIGITALIZATION",
-                description: "Hệ thống POS & Quản lý bán hàng (Menas): Xây dựng xác thực mã PIN, tích hợp thanh toán VietQR và module Voucher với chiến dịch email tự động.",
-                tech: ["Laravel", "jQuery", "MySQL", "VietQR"]
-            },
-            {
-                year: "THG 07/2025 – THG 09/2025",
-                role: "CollabXP (SaaS)",
-                company: "ASIA DIGITALIZATION",
-                description: "CollabXP (SaaS): Xây dựng đa ngôn ngữ, render dữ liệu động và tích hợp SMS (eSMS) với cảnh báo theo workflow.",
-                tech: ["CodeIgniter 3", "JavaScript", "MySQL"]
-            }
-        ]
+experienceBg: "LỊCH SỬ",
+experienceItems: [
+    {
+        year: "THG 03/2026 – HIỆN TẠI",
+        role: "Lập trình viên Full-stack",
+        company: "ASIA DIGITALIZATION",
+        description: "Hệ thống Quản lý Tuyển dụng (CollabXP): Triển khai hỗ trợ đa ngôn ngữ (Anh/Việt). Thiết kế Dashboard thống kê thời gian thực và logic phụ thuộc tác vụ (Task dependency). Tích hợp lịch hẹn phỏng vấn tự động qua Email.",
+        tech: ["Laravel", "MySQL", "Ant Design", "Full-stack"]
+    },
+    {
+        year: "THG 01/2026 – THG 03/2026",
+        role: "Lập trình viên Backend",
+        company: "ASIA DIGITALIZATION",
+        description: "Rainscale CRM (Phân hệ CS): Triển khai Elasticsearch tối ưu hóa tốc độ tra cứu Ticket. Phát triển thông báo SMS tự động theo sự kiện (SLA, trạng thái) và tích hợp các Survey node vào quy trình tự động hóa (Workflow).",
+        tech: ["CodeIgniter 3", "Elasticsearch", "MySQL", "eSMS"]
+    },
+    {
+        year: "THG 11/2025 – THG 01/2026",
+        role: "Lập trình viên Backend",
+        company: "ASIA DIGITALIZATION",
+        description: "Hệ thống Khuyến mãi MM Mega Market: Thiết kế RESTful API và quản lý nhãn sản phẩm qua Excel. Thực thi ánh xạ dữ liệu Elasticsearch và tối ưu hóa logic ưu tiên hiển thị cho các chiến dịch phức tạp.",
+        tech: ["Laravel", "Vue.js", "AWS", "Elasticsearch"]
+    },
+    {
+        year: "THG 09/2025 – THG 12/2025",
+        role: "Lập trình viên PHP",
+        company: "ASIA DIGITALIZATION",
+        description: "Hệ thống POS (Menas): Xây dựng quản lý nhân viên bằng mã PIN (RBAC). Tích hợp quét mã vạch tra cứu khách hàng thời gian thực. Triển khai thanh toán VietQR tự động và in hóa đơn trực tiếp.",
+        tech: ["Laravel", "jQuery", "MySQL", "VietQR"]
+    },
+    {
+        year: "THG 07/2025 – THG 09/2025",
+        role: "Lập trình viên WordPress",
+        company: "ASIA DIGITALIZATION",
+        description: "Web Đặt chỗ & Doanh nghiệp (Amory, KLIC): Thiết kế giao diện tùy chỉnh và logic booking nâng cao. Phát triển bộ chuyển đổi tiền tệ và tự động đồng bộ dữ liệu khách hàng sang Google Sheets/Excel.",
+        tech: ["WordPress", "PHP", "JavaScript", "Google API"]
+    }
+]
     }
 };
 const LanguageContext = createContext();
